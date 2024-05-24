@@ -9,29 +9,53 @@
 </head>
 <body>
     <div class="container">
-        <div class="content">
-            <header>
-                <h1>Welcome.</h1>
-                <p>My name is Maitri Bhajiwala, I'm a developer based in London, United Kingdom. I have developed many types of back-end projects across different domains and platforms.</p>
-                <p>I'm passionate about cutting-edge, pixel-perfect, beautiful interfaces and intuitively implemented UX.</p>
-            </header>
-            <section id="projects">
-                <h2>Projects</h2>
-                <ul>
-                    <li><a href="https://github.com/maitri120/project1" target="_blank">Python Projects</a></li>
-                    <li><a href="https://github.com/maitri120/project2" target="_blank">Machine Learning Projects</a></li>
-                    <li><a href="https://github.com/maitri120/project3" target="_blank">Data Science Projects</a></li>
-                    
-                </ul>
-            </section>
+        <div class="top-bar">
+            <img src="images/logo.png" alt="Logo" class="logo">
+            <div class="social-links">
+                <a href="mailto:maitribhajiwala1201@gmail.com"><img src="images/email-icon.png" alt="Email" class="icon"></a>
+                <a href="https://github.com/maitri120" target="_blank"><img src="images/github-icon.png" alt="GitHub" class="icon"></a>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <div class="content">
+                        <header>
+                            <h1>Welcome.</h1>
+                            <p>My name is Maitri Bhajiwala, I'm a developer based in London, United Kingdom. I have developed many types of back-end projects across different domains and platforms.</p>
+                            <p>I'm passionate about cutting-edge, pixel-perfect, beautiful interfaces and intuitively implemented UX.</p>
+                        </header>
+                        <section id="projects">
+                            <h2>Projects</h2>
+                            <ul>
+                                <li><a href="#" class="project-link" data-project="project1">Python Projects</a></li>
+                                <li><a href="#" class="project-link" data-project="project2">Machine Learning Projects</a></li>
+                                <li><a href="#" class="project-link" data-project="project3">Data Science Projects</a></li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+                <div class="flip-card-back">
+                    <div id="project1" class="project-content">
+                        <h3>Python Projects</h3>
+                        <p>Details about Python Projects...</p>
+                        <a href="#" class="back-link">Back</a>
+                    </div>
+                    <div id="project2" class="project-content">
+                        <h3>Machine Learning Projects</h3>
+                        <p>Details about Machine Learning Projects...</p>
+                        <a href="#" class="back-link">Back</a>
+                    </div>
+                    <div id="project3" class="project-content">
+                        <h3>Data Science Projects</h3>
+                        <p>Details about Data Science Projects...</p>
+                        <a href="#" class="back-link">Back</a>
+                    </div>
+                </div>
+            </div>
         </div>
         <footer>
             <p>© 2024 Maitri Bhajiwala</p>
-            <div class="social-links">
-                <a href="mailto:maitribhajiwala1201@gmail.com"><img src="email-icon.png" alt="Email"></a>
-                <a href="https://github.com/maitri120" target="_blank"><img src="github-icon.png" alt="GitHub"></a>
-                <!-- Add more social links here -->
-            </div>
         </footer>
     </div>
     <script src="script.js"></script>
