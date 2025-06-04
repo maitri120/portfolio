@@ -3,61 +3,259 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maitri Bhajiwala - Portfolio</title>
+    <title>Maitri Bhajiwala - AI Researcher</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <div class="top-bar">
-            <img src="images/logo.png" alt="Logo" class="logo">
-            <div class="social-links">
-                <a href="mailto:maitribhajiwala1201@gmail.com"><img src="images/email-icon.png" alt="Email" class="icon"></a>
-                <a href="https://github.com/maitri120" target="_blank"><img src="images/github-icon.png" alt="GitHub" class="icon"></a>
-            </div>
-        </div>
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <div class="content">
-                        <header>
-                            <h1>Welcome.</h1>
-                            <p>My name is Maitri Bhajiwala, I'm a developer based in London, United Kingdom. I have developed many types of back-end projects across different domains and platforms.</p>
-                            <p>I'm passionate about cutting-edge, pixel-perfect, beautiful interfaces and intuitively implemented UX.</p>
-                        </header>
-                        <section id="projects">
-                            <h2>Projects</h2>
-                            <ul>
-                                <li><a href="#" class="project-link" data-project="project1">Python Projects</a></li>
-                                <li><a href="#" class="project-link" data-project="project2">Machine Learning Projects</a></li>
-                                <li><a href="#" class="project-link" data-project="project3">Data Science Projects</a></li>
-                            </ul>
-                        </section>
+        <header>
+            <h1>Maitri Bhajiwala</h1>
+            <p class="subtitle">AI researcher in training exploring vision, language, and design through machine learning</p>
+        </header>
+
+        <nav class="category-nav">
+            <button class="category-btn" data-category="ai">AI & Machine Learning</button>
+            <button class="category-btn" data-category="computer-vision">Computer Vision</button>
+            <button class="category-btn" data-category="nlp">Natural Language Processing</button>
+            <button class="category-btn" data-category="big-data">Big Data & Analytics</button>
+            <button class="category-btn" data-category="commissioned">Commissioned Work</button>
+        </nav>
+
+        <div class="section">
+            <h2 class="section-title hidden" id="sectionTitle">Projects</h2>
+            <div class="projects-grid hidden" id="projectsGrid">
+                
+                <div class="project-card" data-category="ai computer-vision">
+                    <div class="project-image">
+                        <div class="image-placeholder">Project Screenshot</div>
+                    </div>
+                    <div class="project-header">
+                        <span class="project-icon">🎨</span>
+                        <h3 class="project-title">Art Vision Enhancer - Cambridge Research Project</h3>
+                    </div>
+                    
+                    <div class="project-section">
+                        <div class="section-label">Problem:</div>
+                        <div class="section-content">How can AI assist art students during conceptual ideation and visual enhancement?</div>
+                    </div>
+
+                    <div class="project-section">
+                        <div class="section-label">Approach:</div>
+                        <div class="section-content">Research project exploring computer vision techniques for artistic enhancement and creative workflow optimization.</div>
+                    </div>
+
+                    <div class="project-section">
+                        <div class="section-label">Outcome:</div>
+                        <div class="section-content">Developed innovative approaches to visual processing and creative AI applications.</div>
+                    </div>
+
+                    <div class="project-section">
+                        <div class="section-label">Next steps:</div>
+                        <div class="section-content">Expanding research into multimodal AI for creative applications.</div>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="art-vision-enhancer.html" class="project-link">🔗 View Project Details</a>
                     </div>
                 </div>
-                <div class="flip-card-back">
-                    <div id="project1" class="project-content">
-                        <h3>Python Projects</h3>
-                        <p>Details about Python Projects...</p>
-                        <a href="#" class="back-link">Back</a>
+
+                <div class="project-card" data-category="ai nlp">
+                    <div class="project-image">
+                        <div class="image-placeholder">System Interface</div>
                     </div>
-                    <div id="project2" class="project-content">
-                        <h3>Machine Learning Projects</h3>
-                        <p>Details about Machine Learning Projects...</p>
-                        <a href="#" class="back-link">Back</a>
+                    <div class="project-header">
+                        <span class="project-icon">🧠</span>
+                        <h3 class="project-title">Ontology-Based Expert System For Disease Diagnosis</h3>
                     </div>
-                    <div id="project3" class="project-content">
-                        <h3>Data Science Projects</h3>
-                        <p>Details about Data Science Projects...</p>
-                        <a href="#" class="back-link">Back</a>
+                    
+                    <div class="project-section">
+                        <div class="section-label">Problem:</div>
+                        <div class="section-content">Can ontologies support more accurate disease diagnosis through structured knowledge representation?</div>
+                    </div>
+
+                    <div class="project-section">
+                        <div class="section-label">Approach:</div>
+                        <div class="section-content">Built semantic ontology system using Protégé with rule-based inference engine for medical diagnosis.</div>
+                    </div>
+
+                    <div class="project-section">
+                        <div class="section-label">Outcome:</div>
+                        <div class="section-content">Prototype yields accurate diagnoses in simulated user tests with structured knowledge representation.</div>
+                    </div>
+
+                    <div class="project-section">
+                        <div class="section-label">Next steps:</div>
+                        <div class="section-content">Integration with clinical databases and expanding disease coverage.</div>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="ontology-based-diagnosis.html" class="project-link">🔗 View Project Details</a>
                     </div>
                 </div>
+
+                <div class="project-card" data-category="ai computer-vision">
+                    <div class="project-image">
+                        <div class="image-placeholder">Game Screenshot</div>
+                    </div>
+                    <div class="project-header">
+                        <span class="project-icon">🎮</span>
+                        <h3 class="project-title">Super Mario Bros Reinforcement Learning Bot</h3>
+                    </div>
+                    
+                    <div class="project-section">
+                        <div class="section-label">Problem:</div>
+                        <div class="section-content">Can reinforcement learning agents master complex platformer games through visual input?</div>
+                    </div>
+
+                    <div class="project-section">
+                        <div class="section-label">Approach:</div>
+                        <div class="section-content">Implemented Deep Q-Network using PyTorch and OpenAI Gym Super Mario Bros environment.</div>
+                    </div>
+
+                    <div class="project-section">
+                        <div class="section-label">Outcome:</div>
+                        <div class="section-content">Agent successfully learned to navigate levels and overcome obstacles through trial and error.</div>
+                    </div>
+
+                    <div class="project-section">
+                        <div class="section-label">Next steps:</div>
+                        <div class="section-content">Refining policy networks and exploring advanced RL algorithms.</div>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="super-mario-bros-bot.html" class="project-link">🔗 View Project Details</a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="big-data">
+                    <div class="project-image">
+                        <div class="image-placeholder">Data Visualization</div>
+                    </div>
+                    <div class="project-header">
+                        <span class="project-icon">📊</span>
+                        <h3 class="project-title">Hive Warehouse and Information Visualisation</h3>
+                    </div>
+                    
+                    <div class="project-section">
+                        <div class="section-label">Problem:</div>
+                        <div class="section-content">How to efficiently process and visualize large-scale data for business insights?</div>
+                    </div>
+
+                    <div class="project-section">
+                        <div class="section-label">Approach:</div>
+                        <div class="section-content">Built scalable data warehouse using Apache Hive with interactive visualization dashboards.</div>
+                    </div>
+
+                    <div class="project-section">
+                        <div class="section-label">Outcome:</div>
+                        <div class="section-content">Achieved efficient data processing pipeline with comprehensive visual analytics platform.</div>
+                    </div>
+
+                    <div class="project-section">
+                        <div class="section-label">Next steps:</div>
+                        <div class="section-content">Implementing real-time streaming analytics and ML-based insights.</div>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="big-data.html" class="project-link">🔗 View Project Details</a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="commissioned">
+                    <div class="project-image">
+                        <div class="image-placeholder">System Interface</div>
+                    </div>
+                    <div class="project-header">
+                        <span class="project-icon">💼</span>
+                        <h3 class="project-title">Project Management System</h3>
+                    </div>
+                    
+                    <div class="project-section">
+                        <div class="section-label">Problem:</div>
+                        <div class="section-content">Streamline project workflow and team collaboration for enterprise clients.</div>
+                    </div>
+
+                    <div class="project-section">
+                        <div class="section-label">Approach:</div>
+                        <div class="section-content">Developed comprehensive Java-based project management system with user authentication and task tracking.</div>
+                    </div>
+
+                    <div class="project-section">
+                        <div class="section-label">Outcome:</div>
+                        <div class="section-content">Delivered full-featured system improving team productivity and project visibility.</div>
+                    </div>
+
+                    <div class="project-section">
+                        <div class="section-label">Next steps:</div>
+                        <div class="section-content">Adding mobile app integration and advanced analytics features.</div>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="java-project.html" class="project-link">🔗 View Project Details</a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="big-data">
+                    <div class="project-image">
+                        <div class="image-placeholder">Statistical Charts</div>
+                    </div>
+                    <div class="project-header">
+                        <span class="project-icon">📈</span>
+                        <h3 class="project-title">Statistical Techniques with R</h3>
+                    </div>
+                    
+                    <div class="project-section">
+                        <div class="section-label">Problem:</div>
+                        <div class="section-content">Apply advanced statistical methods for data analysis and predictive modeling.</div>
+                    </div>
+
+                    <div class="project-section">
+                        <div class="section-label">Approach:</div>
+                        <div class="section-content">Implemented comprehensive statistical analysis using R with advanced visualization techniques.</div>
+                    </div>
+
+                    <div class="project-section">
+                        <div class="section-label">Outcome:</div>
+                        <div class="section-content">Successfully applied multiple statistical models with clear data-driven insights.</div>
+                    </div>
+
+                    <div class="project-section">
+                        <div class="section-label">Next steps:</div>
+                        <div class="section-content">Integrating machine learning models with statistical analysis pipeline.</div>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="R-project.html" class="project-link">🔗 View Project Details</a>
+                    </div>
+                </div>
+
             </div>
         </div>
-        <footer>
-            <p>© 2024 Maitri Bhajiwala</p>
-        </footer>
+
+        <!-- About Section -->
+        <section id="about" class="content-section">
+            <div class="section-content-wrapper">
+                <h2>About Me</h2>
+                <p>I'm Maitri Bhajiwala, a Computer Science graduate from the University of Greenwich with a First-Class Honours degree. Throughout my studies, I've developed a strong passion for AI and Machine Learning, which led me to work on projects like an expert system for disease diagnosis and a chatbot designed to enhance creative thinking in students.</p>
+                <p>I enjoy tackling challenges and turning ideas into real-world solutions, whether it's through coding, data analysis, or innovative problem-solving. I'm excited to bring my skills and enthusiasm to new opportunities in the tech world.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="content-section">
+            <div class="section-content-wrapper">
+                <h2>Get in Touch</h2>
+                <p>You can reach me at:</p>
+                <ul class="contact-list">
+                    <li>Email: <a href="mailto:maitribhajiwala1201@gmail.com">maitribhajiwala1201@gmail.com</a></li>
+                    <li>Phone: <a href="tel:+4478253721">+44 7825372171</a></li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/maitribhajiwala" target="_blank">linkedin.com/in/maitribhajiwala</a></li>
+                </ul>
+            </div>
+        </section>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
