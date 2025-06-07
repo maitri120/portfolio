@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Hive Warehouse and Information Visualisation - Maitri Bhajiwala</title>
+    <title>Hive Warehouse and Information Visualisation - Maitri Bhajiwala</title>
     <style>
         * {
             margin: 0;
@@ -67,6 +67,17 @@
             font-size: 1.1rem;
             line-height: 1.8;
             margin-bottom: 15px;
+        }
+
+        .section ul {
+            color: #6c757d;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-left: 20px;
+        }
+
+        .section li {
+            margin-bottom: 10px;
         }
 
         .tech-list {
@@ -146,18 +157,18 @@
     <a href="index.html?show=projects">← Back to Projects</a>
     <div class="container">
         <div class="header">
-            <h1> Hive Warehouse and Information Visualisation</h1>
-            <p style="font-size: 1.1rem; opacity: 0.9; margin-top: 10px;">Cambridge Research Project</p>
+            <h1>Hive Warehouse and Information Visualisation</h1>
+            <p style="font-size: 1.1rem; opacity: 0.9; margin-top: 10px;">Big Data Analytics Project</p>
         </div>
-
+        
         <div class="content">
-            <div class="section project-overview">
+            <div class="section">
                 <h2>Project Overview</h2>
                 <p>The goal of this project was to develop a comprehensive data warehouse that could handle large-scale data processing and analysis, and to generate insightful visualisations to support data-driven decision-making.</p>
             </div>
 
-            <div class="section project-features">
-                <h2 style="margin-bottom: 10px;">Deliverables</h2>
+            <div class="section">
+                <h2>Deliverables</h2>
                 <ul>
                     <li><b>Developed</b> a scalable data warehouse using Hadoop and Hive, enabling efficient processing and analysis of vast datasets.</li>
                     <li><b>Optimised</b> HiveQL queries to enhance the performance and reliability of the ETL (Extract, Transform, Load) processes.</li>
@@ -166,21 +177,31 @@
                 </ul>
             </div>
 
-            <div class="section project-tech">
+            <div class="section">
                 <h2>Technologies Used</h2>
-                <ul>
-                    <li><b>Hadoop and Hive</b> for building and managing the data warehouse</li>
-                    <li><b>HiveQL</b> for writing and optimising queries for data extraction, transformation, and loading.</li>
-                    <li><b>Python</b> for data analysis and visualisation</li>
-                    <li><b>Matplotlib, Seaborn, and Plotly</b> for developing detailed and interactive data visualisations.</li>
-                    <li><b>Pandas</b> for data manipulation and cleaning, ensuring high data quality before visualisation.
-                    </li>
-                </ul>
+                <div class="tech-list">
+                    <div class="tech-item">
+                        <div class="tech-label">Big Data Framework</div>
+                        <div class="tech-value">Hadoop and Hive for building and managing the data warehouse</div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-label">Query Language</div>
+                        <div class="tech-value">HiveQL for writing and optimising queries for data extraction, transformation, and loading</div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-label">Programming Language</div>
+                        <div class="tech-value">Python for data analysis and visualisation</div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-label">Visualisation Libraries</div>
+                        <div class="tech-value">Matplotlib, Seaborn, and Plotly for developing detailed and interactive data visualisations</div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-label">Data Processing</div>
+                        <div class="tech-value">Pandas for data manipulation and cleaning, ensuring high data quality before visualisation</div>
+                    </div>
+                </div>
             </div>
-        
-    
-
-            
 
             <a href="javascript:history.back()" class="back-link">Back to Projects</a>
         </div>
