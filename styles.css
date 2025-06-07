@@ -67,6 +67,7 @@ header {
     border-radius: 15px;
     border: 6px solid rgba(102, 126, 234, 0.4);
     box-shadow: 0 12px 40px rgba(102, 126, 234, 0.4), 0 0 80px rgba(102, 126, 234, 0.2);
+    flex-shrink: 0;
 }
 
 .animated-placeholder {
@@ -83,6 +84,7 @@ header {
     font-weight: bold;
     font-size: 3rem;
     box-shadow: 0 12px 40px rgba(102, 126, 234, 0.4), 0 0 80px rgba(102, 126, 234, 0.2);
+    flex-shrink: 0;
 }
 
 
@@ -93,6 +95,8 @@ h1 {
     color: #2c3e50;
     margin-bottom: 0;
     text-align: left;
+    display: inline-block;
+    flex-shrink: 0;
 }
 
 .subtitle {
