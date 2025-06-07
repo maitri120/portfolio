@@ -63,27 +63,27 @@ header {
 }
 
 .header-gif {
-    width: 200px; /* Much larger and more prominent - similar to article image */
-    height: 200px;
-    border-radius: 15px; /* Square with rounded corners */
+    width: 200px; /* Change from 60px to 200px */
+    height: 200px; /* Change from 60px to 200px */
+    border-radius: 15px; /* Change from 50% to 15px for square */
     border: 6px solid rgba(102, 126, 234, 0.4);
     box-shadow: 0 12px 40px rgba(102, 126, 234, 0.4), 0 0 80px rgba(102, 126, 234, 0.2);
-    animation: glow 3s ease-in-out infinite;
+    animation: glow 3s ease-in-out infinite; /* Remove pulse and rotate */
 }
 
 .animated-placeholder {
-    width: 200px; /* Match the GIF size */
+    width: 200px;
     height: 200px;
-    border-radius: 15px; /* Square with rounded corners */
+    border-radius: 15px; /* Change from 50% to 15px for square */
     background: linear-gradient(45deg, #667eea, #764ba2, #667eea);
     background-size: 200% 200%;
-    animation: gradientShift 3s ease infinite, glow 3s ease-in-out infinite;
+    animation: gradientShift 3s ease infinite, glow 3s ease-in-out infinite; /* Remove pulse */
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     font-weight: bold;
-    font-size: 3rem; /* Much larger text to match the bigger size */
+    font-size: 3rem;
     box-shadow: 0 12px 40px rgba(102, 126, 234, 0.4), 0 0 80px rgba(102, 126, 234, 0.2);
 }
 
