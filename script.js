@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // First, handle returning from project pages
+    showProjectsOnReturn();
+    
     // Category filtering functionality
     const categoryBtns = document.querySelectorAll('.category-btn');
     const projectCards = document.querySelectorAll('.project-card');
@@ -43,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Smooth scrolling for navigation links (keeping your original functionality)
+    // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -67,3 +70,34 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+// Function to handle returning from project pages
+function showProjectsOnReturn() {
+    // Check if there's a hash in the URL indicating we should show projects
+    const urlParams = new URLSearchParams(window.location.search);
+    const showProjects = urlParams.get('show');
+    
+    if (showProjects === 'projects') {
+        // Show all projects by default
+        const projectsGrid = document.getElementById('projectsGrid');
+        const sectionTitle = document.getElementById('sectionTitle');
+        
+        if (projectsGrid && sectionTitle) {
+            projectsGrid.classList.remove('hidden');
+            sectionTitle.classList.remove('hidden');
+            sectionTitle.textContent = 'All Projects';
+            
+            // Show all project cards
+            const projectCards = document.querySelectorAll('.project-card');
+            projectCards.forEach(card => {
+                card.style.display = 'block';
+            });
+            
+            // Scroll to projects section
+            setTimeout(() => {
+                sectionTitle.scrollIntoView({ behavior: 'smooth' });
+            }, 100);
+        }
+    }
+}
+Claude
