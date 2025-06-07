@@ -63,28 +63,30 @@ header {
 }
 
 .header-gif {
-    width: 120px; /* Changed from 50px */
-    height: 120px; /* Changed from 50px */
-    border-radius: 50%; /* Changed from 8px to make it circular */
-    border: 4px solid rgba(102, 126, 234, 0.3); /* Enhanced border */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    animation: pulse 2s infinite, rotate 4s linear infinite; /* ADD: animations */
+    width: 200px; /* Much larger and more prominent - similar to article image */
+    height: 200px;
+    border-radius: 50%;
+    border: 6px solid rgba(102, 126, 234, 0.4);
+    box-shadow: 0 12px 40px rgba(102, 126, 234, 0.4), 0 0 80px rgba(102, 126, 234, 0.2);
+    animation: pulse 2s infinite, glow 3s ease-in-out infinite;
 }
 
 .animated-placeholder {
-    width: 120px;
-    height: 120px;
+    width: 200px; /* Match the GIF size */
+    height: 200px;
     border-radius: 50%;
     background: linear-gradient(45deg, #667eea, #764ba2, #667eea);
     background-size: 200% 200%;
-    animation: gradientShift 3s ease infinite, pulse 2s infinite;
+    animation: gradientShift 3s ease infinite, pulse 2s infinite, glow 3s ease-in-out infinite;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 3rem; /* Much larger text to match the bigger size */
+    box-shadow: 0 12px 40px rgba(102, 126, 234, 0.4), 0 0 80px rgba(102, 126, 234, 0.2);
 }
+
 
 h1 {
     font-size: 2.5rem;
