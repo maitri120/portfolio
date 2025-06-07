@@ -69,28 +69,32 @@
             margin-bottom: 15px;
         }
 
-        .tech-grid {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 10px;
+        .tech-list {
             margin-top: 20px;
         }
 
         .tech-item {
-            display: flex;
-            align-items: center;
-            padding: 10px 0;
+            margin-bottom: 20px;
+            padding: 15px 0;
+            border-bottom: 1px solid #f1f3f4;
+        }
+
+        .tech-item:last-child {
+            border-bottom: none;
         }
 
         .tech-label {
             font-weight: 600;
             color: #495057;
-            min-width: 180px;
+            font-size: 1rem;
+            display: block;
+            margin-bottom: 8px;
         }
 
         .tech-value {
             color: #6c757d;
-            font-size: 1.05rem;
+            font-size: 1rem;
+            line-height: 1.6;
         }
 
         .back-link {
@@ -158,31 +162,31 @@
 
             <div class="section">
                 <h2>Technologies Used</h2>
-                <div class="tech-grid">
+                <div class="tech-list">
                     <div class="tech-item">
-                        <span class="tech-label">Programming Language:</span>
-                        <span class="tech-value">Python</span>
+                        <div class="tech-label">Programming Language</div>
+                        <div class="tech-value">Python</div>
                     </div>
                     <div class="tech-item">
-                        <span class="tech-label">Framework:</span>
-                        <span class="tech-value">Django</span>
+                        <div class="tech-label">Framework</div>
+                        <div class="tech-value">Django</div>
                     </div>
                     <div class="tech-item">
-                        <span class="tech-label">API:</span>
-                        <span class="tech-value">ChatGPT-4 API for natural language understanding and dialogue generation</span>
+                        <div class="tech-label">API</div>
+                        <div class="tech-value">ChatGPT-4 API for natural language understanding and dialogue generation</div>
                     </div>
                     <div class="tech-item">
-                        <span class="tech-label">NLP Techniques:</span>
-                        <span class="tech-value">Used for parsing and interpreting student responses</span>
+                        <div class="tech-label">NLP Techniques</div>
+                        <div class="tech-value">Used for parsing and interpreting student responses</div>
                     </div>
                     <div class="tech-item">
-                        <span class="tech-label">Machine Learning:</span>
-                        <span class="tech-value">Applied to develop the chatbot's adaptive questioning mechanism</span>
+                        <div class="tech-label">Machine Learning</div>
+                        <div class="tech-value">Applied to develop the chatbot's adaptive questioning mechanism</div>
                     </div>
                 </div>
             </div>
 
-            <a href="#" class="back-link">Back to Projects</a>
+            <a href="javascript:history.back()" class="back-link">Back to Projects</a>
         </div>
     </div>
 </body>
