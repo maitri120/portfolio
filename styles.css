@@ -49,6 +49,29 @@ header {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
+.header-content {
+    width: 100%;
+}
+
+.name-and-gif {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.header-gif {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 8px;
+    /* Optional: Add some styling effects */
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
 h1 {
     font-size: 2.5rem;
     font-weight: 600;
@@ -258,7 +281,18 @@ h1 {
     }
 
     h1 {
+        text-align: center;
         font-size: 2rem;
+    }
+
+    .name-and-gif {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .header-gif {
+        width: 40px;
+        height: 40px;
     }
 
     .projects-grid {
