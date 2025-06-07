@@ -63,17 +63,17 @@ header {
 }
 
 .header-gif {
-    width: 60px; /* Changed from 50px */
-    height: 60px; /* Changed from 50px */
+    width: 120px; /* Changed from 50px */
+    height: 120px; /* Changed from 50px */
     border-radius: 50%; /* Changed from 8px to make it circular */
-    border: 3px solid rgba(102, 126, 234, 0.3); /* Enhanced border */
+    border: 4px solid rgba(102, 126, 234, 0.3); /* Enhanced border */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     animation: pulse 2s infinite, rotate 4s linear infinite; /* ADD: animations */
 }
 
 .animated-placeholder {
-    width: 60px;
-    height: 60px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     background: linear-gradient(45deg, #667eea, #764ba2, #667eea);
     background-size: 200% 200%;
@@ -83,7 +83,7 @@ header {
     justify-content: center;
     color: white;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
 
 h1 {
