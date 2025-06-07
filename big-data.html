@@ -143,32 +143,30 @@
     </style>
 </head>
 <body>
-    <header>
-        
-    </header>
-
-    <main>
-        <article class="project-details">
-            <a href="index.html?show=projects">← Back to Projects</a>
+    <a href="index.html?show=projects">← Back to Projects</a>
+    <div class="container">
+        <div class="header">
             <h1> Hive Warehouse and Information Visualisation</h1>
-            
-            
-            <section class="project-section project-description">
+            <p style="font-size: 1.1rem; opacity: 0.9; margin-top: 10px;">Cambridge Research Project</p>
+        </div>
+
+        <div class="content">
+            <div class="section project-overview">
                 <h2>Project Overview</h2>
                 <p>The goal of this project was to develop a comprehensive data warehouse that could handle large-scale data processing and analysis, and to generate insightful visualisations to support data-driven decision-making.</p>
-            </section>
+            </div>
 
-            <section class="project-section project-features">
+            <div class="section project-features">
                 <h2 style="margin-bottom: 10px;">Deliverables</h2>
                 <ul>
                     <li><b>Developed</b> a scalable data warehouse using Hadoop and Hive, enabling efficient processing and analysis of vast datasets.</li>
-                    <li><b> Optimised</b> HiveQL queries to enhance the performance and reliability of the ETL (Extract, Transform, Load) processes.</li>
+                    <li><b>Optimised</b> HiveQL queries to enhance the performance and reliability of the ETL (Extract, Transform, Load) processes.</li>
                     <li><b>Created</b> impactful visualisations, including time series charts, heatmaps, radar plots, and bar graphs, to reveal key trends and correlations in the dataset.</li>
                     <li><b>Ensured</b> data quality and coherence through rigorous data manipulation and cleaning using Pandas, leading to more accurate and meaningful visual outputs.</li>
                 </ul>
-            </section>
+            </div>
 
-            <section class="project-section project-tech" style="margin-top: 20px;">
+            <div class="section project-tech">
                 <h2>Technologies Used</h2>
                 <ul>
                     <li><b>Hadoop and Hive</b> for building and managing the data warehouse</li>
@@ -178,18 +176,14 @@
                     <li><b>Pandas</b> for data manipulation and cleaning, ensuring high data quality before visualisation.
                     </li>
                 </ul>
-            </section>
+            </div>
+        
+    
 
-            <!-- Add more sections as needed -->
+            
 
-            <a href="index.html#projects" class="back-button">Back to Projects</a>
-        </article>
-    </main>
-
-    <footer>
-        <!-- Add footer content here -->
-    </footer>
-
-    <script src="script.js"></script>
+            <a href="javascript:history.back()" class="back-link">Back to Projects</a>
+        </div>
+    </div>
 </body>
 </html>
