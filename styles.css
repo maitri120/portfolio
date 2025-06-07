@@ -307,13 +307,14 @@ h1 {
     }
 
     .name-and-gif {
-        flex-direction: column;
-        gap: 0.5rem;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
     }
 
     .header-gif, .animated-placeholder {
-        width: 150px;
-        height: 150px;
+        width: 80px;
+        height: 80px;
     }
 
     .projects-grid {
