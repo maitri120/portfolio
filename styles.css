@@ -49,21 +49,30 @@ header {
 }
 
 .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
     width: 100%;
+}
+
+.name-and-intro {
+    flex: 1;
+    text-align: center;
+    padding: 0 2rem;
 }
 
 .name-and-gif {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1.5rem;
-    margin-bottom: 0.5rem;
-    flex-wrap: nowrap;
+    gap: 2rem;
 }
 
+
 .header-gif {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 15px;
     border: 6px solid rgba(102, 126, 234, 0.4);
     box-shadow: 0 12px 40px rgba(102, 126, 234, 0.4), 0 0 80px rgba(102, 126, 234, 0.2);
@@ -93,12 +102,9 @@ h1 {
     font-size: 2.5rem;
     font-weight: 600;
     color: #2c3e50;
-    margin-bottom: 0;
-    text-align: left;
-    display: inline-block;
-    flex-shrink: 0;
+    margin-bottom: 0.5rem;
+    text-align: center;
 }
-
 .subtitle {
     font-size: 1.1rem;
     color: #6c757d;
@@ -302,24 +308,26 @@ h1 {
 }
 
 @media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
     .container {
         padding: 1rem;
     }
 
     h1 {
-        text-align: center;
         font-size: 2rem;
     }
 
     .name-and-gif {
-        flex-direction: row;
-        gap: 1rem;
-        justify-content: center;
+        order: -1; 
     }
 
     .header-gif, .animated-placeholder {
-        width: 80px;
-        height: 80px;
+        width: 120px;
+        height: 120px;
     }
 
     .projects-grid {
