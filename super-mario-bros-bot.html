@@ -4,51 +4,216 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Super Mario Bros Bot - Maitri Bhajiwala</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-top: 10px;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #495057;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .section p {
+            color: #6c757d;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .section ul {
+            color: #6c757d;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .section li {
+            margin-bottom: 10px;
+        }
+
+        .tech-list {
+            margin-top: 20px;
+        }
+
+        .tech-item {
+            margin-bottom: 20px;
+            padding: 15px 0;
+            border-bottom: 1px solid #f1f3f4;
+        }
+
+        .tech-item:last-child {
+            border-bottom: none;
+        }
+
+        .tech-label {
+            font-weight: 600;
+            color: #495057;
+            font-size: 1rem;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .tech-value {
+            color: #6c757d;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .back-link-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .back-link {
+            display: inline-block;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+            
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            .tech-label {
+                min-width: auto;
+                margin-bottom: 5px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <!-- Add navigation menu here -->
-    </header>
-
-    <main>
-        <article class="project-details">
-            <a href="index.html?show=projects">← Back to Projects</a>
+    <a href="index.html?show=projects">← Back to Projects</a>
+    <div class="container">
+        <div class="header">
             <h1>Super Mario Bros Bot</h1>
-            
-            
-            <section class="project-section project-description">
+            <p>Reinforcement Learning Project</p>
+        </div>
+        
+        <div class="content">
+            <div class="section">
                 <h2>Project Overview</h2>
-                <p>The objective of this project was to develop a bot capable of playing Super Mario Bros using advanced reinforcement learning techniques. The bot was designed to optimise its decision-making process in a dynamic game environment, effectively navigating through the challenges presented in the game.</p>
-            </section>
+                <p>The objective of this project was to develop a bot capable of playing Super Mario Bros using advanced reinforcement learning techniques. The bot was designed to optimize its decision-making process in a dynamic game environment, effectively navigating through the challenges presented in the game.</p>
+            </div>
 
-            <section class="project-section project-features">
-                <h2 style="margin-bottom: 10px;">Deliverables</h2>
-                <p>Developed the bot in Python, leveraging TensorFlow and the Advantage Actor-Critic (A2C) algorithm. A2C was selected for its ability to efficiently handle continuous action spaces, making it ideal for dynamic gaming environments. The project involved experimenting with various hyperparameters, such as the learning rate and n-steps, to enhance the bot’s performance. Over the course of training, key metrics like loss value and explained variance were monitored to fine-tune the model, resulting in a significant improvement in gameplay efficiency. The bot was tested and trained within the OpenAI Gym framework, demonstrating its capability to learn and adapt to complex scenarios effectively.</p>
-            </section>
-
-            <section class="project-section project-tech" style="margin-top: 20px;">
-                <h2>Technologies Used</h2>
+            <div class="section">
+                <h2>Deliverables</h2>
                 <ul>
-                    <li><b>Programming Language:</b> Python</li>
-                    <li><b>Machine Learning Framework:</b> TensorFlow</li>
-                    <li><b>Development Environment</b> Juptyer Notebook</li>
-                    <li><b>Reinforcement Learning Algorithm:</b> Advantage Actor-Critic (A2C)</li>
-                    <li><b>Game Environment Framework:</b> OpenAI Gym
-                    </li>
+                    <li><b>Reinforcement Learning Implementation:</b> Developed the bot in Python using TensorFlow and the Advantage Actor-Critic (A2C) algorithm, selected for its ability to efficiently handle continuous action spaces.</li>
+                    <li><b>Hyperparameter Optimization:</b> Experimented with various hyperparameters like learning rate and n-steps to enhance the bot's performance.</li>
+                    <li><b>Performance Monitoring:</b> Tracked key metrics like loss value and explained variance to fine-tune the model, resulting in significant gameplay improvement.</li>
+                    <li><b>Environment Integration:</b> Trained and tested the bot within the OpenAI Gym framework, demonstrating its capability to learn and adapt to complex scenarios.</li>
                 </ul>
-            </section>
+            </div>
 
-            <!-- Add more sections as needed -->
+            <div class="section">
+                <h2>Technologies Used</h2>
+                <div class="tech-list">
+                    <div class="tech-item">
+                        <div class="tech-label">Programming Language</div>
+                        <div class="tech-value">Python</div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-label">Machine Learning Framework</div>
+                        <div class="tech-value">TensorFlow</div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-label">Development Environment</div>
+                        <div class="tech-value">Jupyter Notebook</div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-label">Reinforcement Algorithm</div>
+                        <div class="tech-value">Advantage Actor-Critic (A2C)</div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-label">Game Framework</div>
+                        <div class="tech-value">OpenAI Gym</div>
+                    </div>
+                </div>
+            </div>
 
-            <a href="index.html#projects" class="back-button">Back to Projects</a>
-        </article>
-    </main>
-
-    <footer>
-        <!-- Add footer content here -->
-    </footer>
-
-    <script src="script.js"></script>
+            <div class="back-link-container">
+                <a href="javascript:history.back()" class="back-link">Back to Projects</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

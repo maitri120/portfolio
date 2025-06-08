@@ -4,61 +4,216 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ontology Based Disease Diagnosis - Maitri Bhajiwala</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-top: 10px;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #495057;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .section p {
+            color: #6c757d;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .section ul {
+            color: #6c757d;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .section li {
+            margin-bottom: 10px;
+        }
+
+        .tech-list {
+            margin-top: 20px;
+        }
+
+        .tech-item {
+            margin-bottom: 20px;
+            padding: 15px 0;
+            border-bottom: 1px solid #f1f3f4;
+        }
+
+        .tech-item:last-child {
+            border-bottom: none;
+        }
+
+        .tech-label {
+            font-weight: 600;
+            color: #495057;
+            font-size: 1rem;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .tech-value {
+            color: #6c757d;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .back-link-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .back-link {
+            display: inline-block;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+            
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            .tech-label {
+                min-width: auto;
+                margin-bottom: 5px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <!-- Add navigation menu here -->
-    </header>
-
-    <main>
-        <article class="project-details">
-            <a href="index.html?show=projects">← Back to Projects</a>
-            <h1>Ontology-Based Expert System For Enhanced Disease Diagnosis </h1>
-            
-            
-            <section class="project-section project-description">
+    <a href="index.html?show=projects">← Back to Projects</a>
+    <div class="container">
+        <div class="header">
+            <h1>Ontology-Based Expert System For Enhanced Disease Diagnosis</h1>
+            <p>AI Medical Diagnosis Project</p>
+        </div>
+        
+        <div class="content">
+            <div class="section">
                 <h2>Project Overview</h2>
-                <p>The goal of this project was to develop an advanced expert system that utilises ontology-based knowledge representation to assist in the diagnosis of diseases based on user-reported symptoms. The system was designed to provide accurate and detailed diagnostic suggestions, enhancing the process of disease identification and improving the overall user experience.</p>
-            </section>
+                <p>The goal of this project was to develop an advanced expert system that utilises ontology-based knowledge representation to assist in the diagnosis of diseases based on user-reported symptoms. The system was designed to provide accurate and detailed diagnostic suggestions, enhancing the process of disease identification.</p>
+            </div>
 
-            <section class="project-section project-features">
-                <h2 style="margin-bottom: 10px;">Deliverables</h2>
-                <p>I spearheaded the development of a sophisticated expert system integrated with a graphical user interface (GUI) to streamline the diagnosis of diseases from symptoms provided by users. The project combines artificial intelligence with ontological engineering to create a comprehensive and intuitive diagnostic tool.</p>
-                <p>The system uses medical ontologies to model complex medical knowledge, facilitating detailed symptom-disease mapping. Leveraging the 'Protégé' ontology management tool, I was able to merge and manage intricate ontologies, which significantly enhanced the system’s capability to understand and process a wide range of medical conditions.</p>
-                <p>The core of the expert system is a rule-based engine that applies backward chaining logic to infer potential diseases based on user inputs. By integrating ontological data, the system achieves improved accuracy and depth in diagnosis.</p>
-                <p>To ensure ease of use, I developed a user-friendly GUI using Tkinter, which allows users to input symptoms easily and receive diagnostic results. The interface was seamlessly integrated with the expert system, displaying both the diagnosis and actionable health information.</p>
-            </section>
-
-            <section class="project-section project-tech" style="margin-top: 20px;">
-                <h2>Technologies Used</h2>
+            <div class="section">
+                <h2>Deliverables</h2>
                 <ul>
-                    <li><b>Programming Language:</b> Python</li>
-                    <li><b>Ontology Management:</b>
-                        <ul>
-                        <li><b>Protege:</b> Used for creating and managing medical ontologies.</li>
-                        <li><b>W3C Web Ontology Management (OWL):</b> Employed for building the knowledge base, representing relationships between diseases and symptoms.</li>
-                        </ul>
-                    </li>
-                    <li><b>Rule-Based System:</b> Implemented using backward chaining logic for disease inference.</li>
-                    <li><b>Graphical User Interface (GUI):</b>
-                        <ul><li>Tkinter: Used for creating an intuitive and interactive user interface.</li></ul>
-                    <li><b>ChatBot Framework:</b>
-                        <ul><li> Rasa Framework: For potential integration with a chatbot that could assist users in navigating the system.</li></ul>
-                    <li><b>Natural Language Processing (NLP):</b> Utilised for interpreting and managing user inputs.</li>
+                    <li><b>Expert System Development:</b> Spearheaded the development of a sophisticated expert system integrated with a graphical user interface to streamline disease diagnosis from user-reported symptoms.</li>
+                    <li><b>Ontology Management:</b> Used medical ontologies to model complex medical knowledge, facilitating detailed symptom-disease mapping using Protégé ontology management tool.</li>
+                    <li><b>Rule-Based Engine:</b> Implemented a rule-based engine using backward chaining logic to infer potential diseases based on user inputs.</li>
+                    <li><b>User Interface:</b> Developed a user-friendly GUI using Tkinter, allowing users to input symptoms easily and receive diagnostic results.</li>
                 </ul>
-            </section>
+            </div>
 
-            <!-- Add more sections as needed -->
+            <div class="section">
+                <h2>Technologies Used</h2>
+                <div class="tech-list">
+                    <div class="tech-item">
+                        <div class="tech-label">Programming Language</div>
+                        <div class="tech-value">Python</div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-label">Ontology Management</div>
+                        <div class="tech-value">Protégé for creating and managing medical ontologies</div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-label">Ontology Standard</div>
+                        <div class="tech-value">W3C Web Ontology Management (OWL) for building the knowledge base</div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-label">Inference System</div>
+                        <div class="tech-value">Backward chaining logic for disease inference</div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-label">GUI Framework</div>
+                        <div class="tech-value">Tkinter for creating the user interface</div>
+                    </div>
+                </div>
+            </div>
 
-            <a href="index.html#projects" class="back-button">Back to Projects</a>
-        </article>
-    </main>
-
-    <footer>
-        <!-- Add footer content here -->
-    </footer>
-
-    <script src="script.js"></script>
+            <div class="back-link-container">
+                <a href="javascript:history.back()" class="back-link">Back to Projects</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

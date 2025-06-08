@@ -3,55 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Management System</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Project Management System - Maitri Bhajiwala</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-top: 10px;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #495057;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .section p {
+            color: #6c757d;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .section ul {
+            color: #6c757d;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .section li {
+            margin-bottom: 10px;
+        }
+
+        .tech-list {
+            margin-top: 20px;
+        }
+
+        .tech-item {
+            margin-bottom: 20px;
+            padding: 15px 0;
+            border-bottom: 1px solid #f1f3f4;
+        }
+
+        .tech-item:last-child {
+            border-bottom: none;
+        }
+
+        .tech-label {
+            font-weight: 600;
+            color: #495057;
+            font-size: 1rem;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .tech-value {
+            color: #6c757d;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .back-link-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .back-link {
+            display: inline-block;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+            
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            .tech-label {
+                min-width: auto;
+                margin-bottom: 5px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <!-- Add navigation menu here -->
-    </header>
-
-    <main>
-        <article class="project-details">
+    <a href="index.html?show=projects">← Back to Projects</a>
+    <div class="container">
+        <div class="header">
             <h1>Project Management System</h1>
-            
-            
-            <section class="project-section project-description">
-                <a href="index.html?show=projects">← Back to Projects</a>
+            <p>Java/Kotlin Application</p>
+        </div>
+        
+        <div class="content">
+            <div class="section">
                 <h2>Project Overview</h2>
                 <p>The aim of the project was to develop a project management system that allows users to create, edit, and manage tasks within a project. The system aimed to provide a comprehensive tool for task management, incorporating features like task assignment, adjacency matrix representation, and domain graph visualisation.</p>
-            </section>
+            </div>
 
-            <section class="project-section project-features">
-                <h2 style="margin-bottom: 10px;">Deliverables</h2>
+            <div class="section">
+                <h2>Deliverables</h2>
                 <ul>
-                    <li><b>Domain Knowledge and Graph:</b> The project included the creation of domain and entity classes in Kotlin to represent tasks as graphs, supporting the Java-based GUI application. This structure allowed users to visualise project dependencies and tasks in a structured manner.</li>
-                    <li><b>Adjacency Matrix Implementation:</b> An adjacency matrix was created in Kotlin, enabling users to view the task dependencies within a project. This matrix was integrated into the GUI, offering a clear and readable representation of the project's structure.
-                    <li><b>Desktop Application with GUI:</b>  The team successfully developed a desktop application using Java, which provided users with the ability to create, edit, and delete projects and their tasks through a graphical user interface (GUI).</li>
-
-                    </li>
+                    <li><b>Domain Knowledge and Graph:</b> Created domain and entity classes in Kotlin to represent tasks as graphs, supporting the Java-based GUI application. This structure allowed users to visualise project dependencies and tasks in a structured manner.</li>
+                    <li><b>Adjacency Matrix Implementation:</b> Developed an adjacency matrix in Kotlin, enabling users to view task dependencies within a project. This matrix was integrated into the GUI, offering a clear representation of the project's structure.</li>
+                    <li><b>Desktop Application with GUI:</b> Developed a desktop application using Java, providing users with the ability to create, edit, and delete projects and their tasks through a graphical user interface.</li>
                 </ul>
-            </section>
+            </div>
 
-            <section class="project-section project-tech" style="margin-top: 20px;">
+            <div class="section">
                 <h2>Technologies Used</h2>
-                <ul>
-                    <li><b>Java:</b> Used for developing the desktop application with a GUI, which allowed users to interact with the system through buttons for creating, updating, and deleting tasks and projects.</li>
-                    <li><b>Kotlin:</b> Employed to create the domain classes and graphs representing the project tasks. Kotlin was also used to implement the adjacency matrix, which visualises the connections between tasks.</li>
-                    
-                </ul>
-            </section>
+                <div class="tech-list">
+                    <div class="tech-item">
+                        <div class="tech-label">Programming Language</div>
+                        <div class="tech-value">Java for the desktop application with GUI</div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-label">Programming Language</div>
+                        <div class="tech-value">Kotlin for domain classes and graph representation</div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-label">Data Structure</div>
+                        <div class="tech-value">Adjacency matrix for task dependency visualization</div>
+                    </div>
+                </div>
+            </div>
 
-            <!-- Add more sections as needed -->
-
-            
-        </article>
-    </main>
-
-    <footer>
-        <!-- Add footer content here -->
-    </footer>
-
-    <script src="script.js"></script>
+            <div class="back-link-container">
+                <a href="javascript:history.back()" class="back-link">Back to Projects</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
