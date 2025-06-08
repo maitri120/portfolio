@@ -296,7 +296,7 @@ h1 {
     text-decoration: underline;
 }
 
-/* Single column layout for specific sections */
+
 .single-column {
     grid-column: 1 / -1;
 }
