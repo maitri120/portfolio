@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Entropic Archive - Interactive Black Hole Simulation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: rgba(15, 15, 26, 0.9);
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #4b79cf 0%, #6e48aa 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-top: 10px;
+        }
+
+        .content {
+            padding: 40px;
+            color: #d1d5db;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #a5b4fc;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #2d3748;
+            padding-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .section p {
+            color: #d1d5db;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .section ul {
+            color: #d1d5db;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .section li {
+            margin-bottom: 10px;
+        }
+
+        .tech-list {
+            margin-top: 20px;
+        }
+
+        .tech-item {
+            margin-bottom: 20px;
+            padding: 15px 0;
+            border-bottom: 1px solid #2d3748;
+        }
+
+        .tech-item:last-child {
+            border-bottom: none;
+        }
+
+        .tech-label {
+            font-weight: 600;
+            color: #a5b4fc;
+            font-size: 1rem;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .tech-value {
+            color: #d1d5db;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .back-link-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .back-link {
+            display: inline-block;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #4b79cf 0%, #6e48aa 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(75, 121, 207, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+            
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="header">
+            <h1>The Entropic Archive</h1>
+            <p>Interactive Black Hole Simulation</p>
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <h2>Project Overview</h2>
+                <p>The Entropic Archive is an immersive web experience that visualizes black hole physics through interactive data decay. Users submit information that gradually distorts—simulating spaghettification, Hawking radiation, and the information paradox. The project transforms abstract astrophysics concepts into tangible UI behaviors.</p>
+            </div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li><b>Event Horizon Simulation:</b> User inputs collapse into the archive with gravitational animations, disappearing beyond the "point of no return".</li>
+                    <li><b>Time-Based Entropy:</b> Implemented progressive data corruption where information decays into glitches and noise over time.</li>
+                    <li><b>Hawking Radiation Visualization:</b> Created particle systems that leak "data remnants" using Canvas API.</li>
+                    <li><b>Spaghettification Effect:</b> CSS transforms stretch UI elements vertically as they age, mimicking tidal forces.</li>
+                    <li><b>No-Escape Mechanism:</b> Disabled back/refresh actions to enhance immersion in the black hole metaphor.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Technologies Used</h2>
+                <div class="tech-list">
+                    <div class="tech-item">
+                        <div class="tech-label">Core Framework</div>
+                        <div class="tech-value">Django for backend data processing</div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-label">Frontend</div>
+                        <div class="tech-value">HTML5/CSS3 animations, Canvas API for particle effects</div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-label">Physics Simulation</div>
+                        <div class="tech-value">Custom time-based entropy algorithms in Python</div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-label">UI Effects</div>
+                        <div class="tech-value">CSS transforms, keyframe animations, and JavaScript event handling</div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-label">Concept Inspiration</div>
+                        <div class="tech-value">Hawking radiation, information paradox, and general relativity principles</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Project Impact</h2>
+                <p>This artistic interpretation of astrophysics demonstrates how complex scientific concepts can be made accessible through interactive design. The project pushes boundaries in:</p>
+                <ul>
+                    <li><b>Experimental UI:</b> Challenges conventional web interactions by implementing "destructive" interfaces</li>
+                    <li><b>Science Communication:</b> Visualizes abstract physics theories in an engaging format</li>
+                    <li><b>Generative Art:</b> Creates unique decay patterns for each user submission</li>
+                </ul>
+            </div>
+
+            <div class="back-link-container">
+                <a href="javascript:history.back()" class="back-link">Back to Projects</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
