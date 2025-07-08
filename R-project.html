@@ -15,7 +15,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 100%);
             min-height: 100vh;
             padding: 40px 20px;
         }
@@ -23,16 +23,16 @@
         .container {
             max-width: 1000px;
             margin: 0 auto;
-            background: rgba(255, 255, 255, 0.9);
+            background: rgba(15, 15, 26, 0.9);
             border-radius: 12px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             overflow: hidden;
         }
 
         .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #4b79cf 0%, #6e48aa 100%);
             color: white;
             padding: 40px;
             text-align: center;
@@ -53,6 +53,7 @@
 
         .content {
             padding: 40px;
+            color: #d1d5db;
         }
 
         .section {
@@ -60,23 +61,23 @@
         }
 
         .section h2 {
-            color: #495057;
+            color: #a5b4fc;
             font-size: 1.8rem;
             margin-bottom: 20px;
-            border-bottom: 2px solid #e9ecef;
+            border-bottom: 2px solid #2d3748;
             padding-bottom: 10px;
             font-weight: 500;
         }
 
         .section p {
-            color: #6c757d;
+            color: #d1d5db;
             font-size: 1.1rem;
             line-height: 1.8;
             margin-bottom: 15px;
         }
 
         .section ul {
-            color: #6c757d;
+            color: #d1d5db;
             font-size: 1.1rem;
             line-height: 1.8;
             margin-left: 20px;
@@ -94,7 +95,7 @@
         .tech-item {
             margin-bottom: 20px;
             padding: 15px 0;
-            border-bottom: 1px solid #f1f3f4;
+            border-bottom: 1px solid #2d3748;
         }
 
         .tech-item:last-child {
@@ -103,14 +104,14 @@
 
         .tech-label {
             font-weight: 600;
-            color: #495057;
+            color: #a5b4fc;
             font-size: 1rem;
             display: block;
             margin-bottom: 8px;
         }
 
         .tech-value {
-            color: #6c757d;
+            color: #d1d5db;
             font-size: 1rem;
             line-height: 1.6;
         }
@@ -123,7 +124,7 @@
         .back-link {
             display: inline-block;
             padding: 12px 24px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #4b79cf 0%, #6e48aa 100%);
             color: white;
             text-decoration: none;
             border-radius: 6px;
@@ -133,7 +134,7 @@
 
         .back-link:hover {
             transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+            box-shadow: 0 4px 12px rgba(75, 121, 207, 0.4);
         }
 
         @media (max-width: 768px) {
@@ -152,35 +153,31 @@
             .content {
                 padding: 30px 20px;
             }
-            
-            .tech-label {
-                min-width: auto;
-                margin-bottom: 5px;
-            }
         }
     </style>
 </head>
 <body>
-    <a href="index.html?show=projects">← Back to Projects</a>
+    
     <div class="container">
         <div class="header">
             <h1>Statistical Techniques with R</h1>
-            <p>Data Analysis Project</p>
+            <p>Advanced Data Analysis Project</p>
         </div>
         
         <div class="content">
             <div class="section">
                 <h2>Project Overview</h2>
-                <p>The aim of this project was to apply advanced statistical techniques using R to analyze complex datasets, providing meaningful insights and visualizations.</p>
+                <p>This project applied sophisticated statistical methods using R to extract meaningful insights from complex datasets. The analysis combined rigorous statistical theory with practical data science techniques to solve real-world problems through data-driven approaches.</p>
             </div>
 
             <div class="section">
-                <h2>Deliverables</h2>
+                <h2>Key Features</h2>
                 <ul>
-                    <li><b>Data Analysis:</b> Applied various statistical methods to analyze complex datasets and extract meaningful patterns.</li>
-                    <li><b>Data Visualization:</b> Created comprehensive visualizations to represent statistical findings clearly and effectively.</li>
-                    <li><b>Statistical Modeling:</b> Developed predictive models using advanced statistical techniques.</li>
-                    <li><b>Report Generation:</b> Produced detailed reports documenting the analysis process and findings.</li>
+                    <li><b>Comprehensive Analysis:</b> Conducted exploratory data analysis, hypothesis testing, and predictive modeling on diverse datasets.</li>
+                    <li><b>Advanced Visualization:</b> Created publication-quality visualizations using ggplot2 to communicate complex statistical relationships.</li>
+                    <li><b>Statistical Modeling:</b> Implemented regression models, time series analysis, and machine learning algorithms.</li>
+                    <li><b>Reproducible Research:</b> Developed R Markdown reports that integrate code, visualizations, and narrative.</li>
+                    <li><b>Data Wrangling:</b> Cleaned and transformed raw data into analysis-ready formats using tidyverse packages.</li>
                 </ul>
             </div>
 
@@ -188,18 +185,37 @@
                 <h2>Technologies Used</h2>
                 <div class="tech-list">
                     <div class="tech-item">
-                        <div class="tech-label">Programming Language</div>
-                        <div class="tech-value">R</div>
+                        <div class="tech-label">Core Platform</div>
+                        <div class="tech-value">R Statistical Programming Language</div>
                     </div>
                     <div class="tech-item">
-                        <div class="tech-label">Statistical Packages</div>
-                        <div class="tech-value">Various R packages for statistical analysis</div>
+                        <div class="tech-label">Analysis Packages</div>
+                        <div class="tech-value">stats, lme4, forecast for statistical modeling</div>
                     </div>
                     <div class="tech-item">
-                        <div class="tech-label">Visualization Libraries</div>
-                        <div class="tech-value">ggplot2 and other R visualization packages</div>
+                        <div class="tech-label">Visualization</div>
+                        <div class="tech-value">ggplot2, plotly for interactive visualizations</div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-label">Data Manipulation</div>
+                        <div class="tech-value">dplyr, tidyr for efficient data wrangling</div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-label">Concept Inspiration</div>
+                        <div class="tech-value">Statistical theory and data science best practices</div>
                     </div>
                 </div>
+            </div>
+
+            <div class="section">
+                <h2>Project Impact</h2>
+                <p>This project demonstrates the power of statistical computing:</p>
+                <ul>
+                    <li><b>Insight Generation:</b> Transformed raw data into actionable business intelligence</li>
+                    <li><b>Technical Rigor:</b> Applied appropriate statistical methods to ensure valid conclusions</li>
+                    <li><b>Communication:</b> Developed clear visualizations to convey complex findings</li>
+                    <li><b>Reproducibility:</b> Established workflows that enable result verification and extension</li>
+                </ul>
             </div>
 
             <div class="back-link-container">
