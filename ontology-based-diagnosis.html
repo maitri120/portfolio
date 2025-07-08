@@ -15,7 +15,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 100%);
             min-height: 100vh;
             padding: 40px 20px;
         }
@@ -23,16 +23,16 @@
         .container {
             max-width: 1000px;
             margin: 0 auto;
-            background: rgba(255, 255, 255, 0.9);
+            background: rgba(15, 15, 26, 0.9);
             border-radius: 12px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             overflow: hidden;
         }
 
         .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #4b79cf 0%, #6e48aa 100%);
             color: white;
             padding: 40px;
             text-align: center;
@@ -53,6 +53,7 @@
 
         .content {
             padding: 40px;
+            color: #d1d5db;
         }
 
         .section {
@@ -60,23 +61,23 @@
         }
 
         .section h2 {
-            color: #495057;
+            color: #a5b4fc;
             font-size: 1.8rem;
             margin-bottom: 20px;
-            border-bottom: 2px solid #e9ecef;
+            border-bottom: 2px solid #2d3748;
             padding-bottom: 10px;
             font-weight: 500;
         }
 
         .section p {
-            color: #6c757d;
+            color: #d1d5db;
             font-size: 1.1rem;
             line-height: 1.8;
             margin-bottom: 15px;
         }
 
         .section ul {
-            color: #6c757d;
+            color: #d1d5db;
             font-size: 1.1rem;
             line-height: 1.8;
             margin-left: 20px;
@@ -94,7 +95,7 @@
         .tech-item {
             margin-bottom: 20px;
             padding: 15px 0;
-            border-bottom: 1px solid #f1f3f4;
+            border-bottom: 1px solid #2d3748;
         }
 
         .tech-item:last-child {
@@ -103,14 +104,14 @@
 
         .tech-label {
             font-weight: 600;
-            color: #495057;
+            color: #a5b4fc;
             font-size: 1rem;
             display: block;
             margin-bottom: 8px;
         }
 
         .tech-value {
-            color: #6c757d;
+            color: #d1d5db;
             font-size: 1rem;
             line-height: 1.6;
         }
@@ -123,7 +124,7 @@
         .back-link {
             display: inline-block;
             padding: 12px 24px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #4b79cf 0%, #6e48aa 100%);
             color: white;
             text-decoration: none;
             border-radius: 6px;
@@ -133,7 +134,7 @@
 
         .back-link:hover {
             transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+            box-shadow: 0 4px 12px rgba(75, 121, 207, 0.4);
         }
 
         @media (max-width: 768px) {
@@ -152,11 +153,6 @@
             .content {
                 padding: 30px 20px;
             }
-            
-            .tech-label {
-                min-width: auto;
-                margin-bottom: 5px;
-            }
         }
     </style>
 </head>
@@ -171,16 +167,17 @@
         <div class="content">
             <div class="section">
                 <h2>Project Overview</h2>
-                <p>The goal of this project was to develop an advanced expert system that utilises ontology-based knowledge representation to assist in the diagnosis of diseases based on user-reported symptoms. The system was designed to provide accurate and detailed diagnostic suggestions, enhancing the process of disease identification.</p>
+                <p>The goal of this project was to develop an advanced expert system that utilizes ontology-based knowledge representation to assist in the diagnosis of diseases based on user-reported symptoms. The system provides accurate diagnostic suggestions while demonstrating the power of semantic technologies in healthcare.</p>
             </div>
 
             <div class="section">
-                <h2>Deliverables</h2>
+                <h2>Key Features</h2>
                 <ul>
-                    <li><b>Expert System Development:</b> Spearheaded the development of a sophisticated expert system integrated with a graphical user interface to streamline disease diagnosis from user-reported symptoms.</li>
-                    <li><b>Ontology Management:</b> Used medical ontologies to model complex medical knowledge, facilitating detailed symptom-disease mapping using Protégé ontology management tool.</li>
-                    <li><b>Rule-Based Engine:</b> Implemented a rule-based engine using backward chaining logic to infer potential diseases based on user inputs.</li>
-                    <li><b>User Interface:</b> Developed a user-friendly GUI using Tkinter, allowing users to input symptoms easily and receive diagnostic results.</li>
+                    <li><b>Medical Knowledge Graph:</b> Built a comprehensive ontology using Protégé to model diseases, symptoms, and their complex relationships.</li>
+                    <li><b>Intelligent Diagnosis:</b> Implemented backward chaining inference to systematically evaluate symptoms and suggest potential diagnoses.</li>
+                    <li><b>User-Friendly Interface:</b> Developed an accessible Tkinter GUI allowing users to input symptoms and receive diagnostic feedback.</li>
+                    <li><b>Standard Compliance:</b> Adhered to W3C Web Ontology Language (OWL) standards for interoperability and future extensibility.</li>
+                    <li><b>Rule-Based Reasoning:</b> Created a robust rule engine that mimics expert diagnostic decision-making processes.</li>
                 </ul>
             </div>
 
@@ -188,26 +185,37 @@
                 <h2>Technologies Used</h2>
                 <div class="tech-list">
                     <div class="tech-item">
-                        <div class="tech-label">Programming Language</div>
-                        <div class="tech-value">Python</div>
+                        <div class="tech-label">Core Framework</div>
+                        <div class="tech-value">Python for system implementation</div>
                     </div>
                     <div class="tech-item">
-                        <div class="tech-label">Ontology Management</div>
-                        <div class="tech-value">Protégé for creating and managing medical ontologies</div>
+                        <div class="tech-label">Knowledge Engineering</div>
+                        <div class="tech-value">Protégé for ontology development and management</div>
                     </div>
                     <div class="tech-item">
                         <div class="tech-label">Ontology Standard</div>
-                        <div class="tech-value">W3C Web Ontology Management (OWL) for building the knowledge base</div>
+                        <div class="tech-value">OWL for semantic knowledge representation</div>
                     </div>
                     <div class="tech-item">
                         <div class="tech-label">Inference System</div>
-                        <div class="tech-value">Backward chaining logic for disease inference</div>
+                        <div class="tech-value">Backward chaining logic for diagnostic reasoning</div>
                     </div>
                     <div class="tech-item">
-                        <div class="tech-label">GUI Framework</div>
-                        <div class="tech-value">Tkinter for creating the user interface</div>
+                        <div class="tech-label">Concept Inspiration</div>
+                        <div class="tech-value">Medical diagnostic protocols and semantic web technologies</div>
                     </div>
                 </div>
+            </div>
+
+            <div class="section">
+                <h2>Project Impact</h2>
+                <p>This project showcases the potential of AI in medical applications:</p>
+                <ul>
+                    <li><b>Diagnostic Aid:</b> Demonstrated how AI can support (though not replace) medical professionals</li>
+                    <li><b>Knowledge Representation:</b> Illustrated the power of ontologies in modeling complex medical knowledge</li>
+                    <li><b>Accessibility:</b> Made medical knowledge more accessible through an intuitive interface</li>
+                    <li><b>Research Potential:</b> Established a foundation for future work in medical AI systems</li>
+                </ul>
             </div>
 
             <div class="back-link-container">

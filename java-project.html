@@ -15,7 +15,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 100%);
             min-height: 100vh;
             padding: 40px 20px;
         }
@@ -23,16 +23,16 @@
         .container {
             max-width: 1000px;
             margin: 0 auto;
-            background: rgba(255, 255, 255, 0.9);
+            background: rgba(15, 15, 26, 0.9);
             border-radius: 12px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             overflow: hidden;
         }
 
         .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #4b79cf 0%, #6e48aa 100%);
             color: white;
             padding: 40px;
             text-align: center;
@@ -53,6 +53,7 @@
 
         .content {
             padding: 40px;
+            color: #d1d5db;
         }
 
         .section {
@@ -60,23 +61,23 @@
         }
 
         .section h2 {
-            color: #495057;
+            color: #a5b4fc;
             font-size: 1.8rem;
             margin-bottom: 20px;
-            border-bottom: 2px solid #e9ecef;
+            border-bottom: 2px solid #2d3748;
             padding-bottom: 10px;
             font-weight: 500;
         }
 
         .section p {
-            color: #6c757d;
+            color: #d1d5db;
             font-size: 1.1rem;
             line-height: 1.8;
             margin-bottom: 15px;
         }
 
         .section ul {
-            color: #6c757d;
+            color: #d1d5db;
             font-size: 1.1rem;
             line-height: 1.8;
             margin-left: 20px;
@@ -94,7 +95,7 @@
         .tech-item {
             margin-bottom: 20px;
             padding: 15px 0;
-            border-bottom: 1px solid #f1f3f4;
+            border-bottom: 1px solid #2d3748;
         }
 
         .tech-item:last-child {
@@ -103,14 +104,14 @@
 
         .tech-label {
             font-weight: 600;
-            color: #495057;
+            color: #a5b4fc;
             font-size: 1rem;
             display: block;
             margin-bottom: 8px;
         }
 
         .tech-value {
-            color: #6c757d;
+            color: #d1d5db;
             font-size: 1rem;
             line-height: 1.6;
         }
@@ -123,7 +124,7 @@
         .back-link {
             display: inline-block;
             padding: 12px 24px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #4b79cf 0%, #6e48aa 100%);
             color: white;
             text-decoration: none;
             border-radius: 6px;
@@ -133,7 +134,7 @@
 
         .back-link:hover {
             transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+            box-shadow: 0 4px 12px rgba(75, 121, 207, 0.4);
         }
 
         @media (max-width: 768px) {
@@ -152,16 +153,11 @@
             .content {
                 padding: 30px 20px;
             }
-            
-            .tech-label {
-                min-width: auto;
-                margin-bottom: 5px;
-            }
         }
     </style>
 </head>
 <body>
-    <a href="index.html?show=projects">← Back to Projects</a>
+    
     <div class="container">
         <div class="header">
             <h1>Project Management System</h1>
@@ -171,15 +167,17 @@
         <div class="content">
             <div class="section">
                 <h2>Project Overview</h2>
-                <p>The aim of the project was to develop a project management system that allows users to create, edit, and manage tasks within a project. The system aimed to provide a comprehensive tool for task management, incorporating features like task assignment, adjacency matrix representation, and domain graph visualisation.</p>
+                <p>The aim of the project was to develop a project management system that allows users to create, edit, and manage tasks within a project. The system provides comprehensive tools for task management, including task assignment, dependency visualization, and project structure analysis.</p>
             </div>
 
             <div class="section">
-                <h2>Deliverables</h2>
+                <h2>Key Features</h2>
                 <ul>
-                    <li><b>Domain Knowledge and Graph:</b> Created domain and entity classes in Kotlin to represent tasks as graphs, supporting the Java-based GUI application. This structure allowed users to visualise project dependencies and tasks in a structured manner.</li>
-                    <li><b>Adjacency Matrix Implementation:</b> Developed an adjacency matrix in Kotlin, enabling users to view task dependencies within a project. This matrix was integrated into the GUI, offering a clear representation of the project's structure.</li>
-                    <li><b>Desktop Application with GUI:</b> Developed a desktop application using Java, providing users with the ability to create, edit, and delete projects and their tasks through a graphical user interface.</li>
+                    <li><b>Graph-Based Task Management:</b> Implemented domain and entity classes in Kotlin to represent tasks as graphs, enabling complex project structure visualization.</li>
+                    <li><b>Dependency Visualization:</b> Developed an adjacency matrix system to clearly display task dependencies and relationships within projects.</li>
+                    <li><b>Intuitive GUI:</b> Created a desktop application with Java Swing, providing users with an accessible interface for project management.</li>
+                    <li><b>CRUD Operations:</b> Implemented full create, read, update, and delete functionality for both projects and individual tasks.</li>
+                    <li><b>Cross-Language Integration:</b> Seamlessly combined Java and Kotlin components for optimal performance and maintainability.</li>
                 </ul>
             </div>
 
@@ -187,18 +185,37 @@
                 <h2>Technologies Used</h2>
                 <div class="tech-list">
                     <div class="tech-item">
-                        <div class="tech-label">Programming Language</div>
-                        <div class="tech-value">Java for the desktop application with GUI</div>
+                        <div class="tech-label">Core Framework</div>
+                        <div class="tech-value">Java Swing for desktop GUI development</div>
                     </div>
                     <div class="tech-item">
-                        <div class="tech-label">Programming Language</div>
-                        <div class="tech-value">Kotlin for domain classes and graph representation</div>
+                        <div class="tech-label">Domain Modeling</div>
+                        <div class="tech-value">Kotlin for business logic and data structures</div>
                     </div>
                     <div class="tech-item">
                         <div class="tech-label">Data Structure</div>
-                        <div class="tech-value">Adjacency matrix for task dependency visualization</div>
+                        <div class="tech-value">Adjacency matrix for dependency management</div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-label">Graph Theory</div>
+                        <div class="tech-value">Applied graph algorithms for task relationship analysis</div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-label">Concept Inspiration</div>
+                        <div class="tech-value">Project management methodologies and graph theory</div>
                     </div>
                 </div>
+            </div>
+
+            <div class="section">
+                <h2>Project Impact</h2>
+                <p>This application demonstrates how technical solutions can enhance project management:</p>
+                <ul>
+                    <li><b>Visual Clarity:</b> Made complex task dependencies understandable through graphical representation</li>
+                    <li><b>Efficiency:</b> Streamlined project planning and tracking processes</li>
+                    <li><b>Flexibility:</b> Accommodated various project management styles and methodologies</li>
+                    <li><b>Technical Integration:</b> Showcased successful interoperability between Java and Kotlin</li>
+                </ul>
             </div>
 
             <div class="back-link-container">
