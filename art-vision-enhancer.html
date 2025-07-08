@@ -5,163 +5,159 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Art Vision Enhancer Chatbot - Cambridge Research Project</title>
     <style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        line-height: 1.6;
-        color: #333;
-        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-        min-height: 100vh;
-        padding: 40px 20px;
-    }
-
-    .container {
-        max-width: 1000px;
-        margin: 0 auto;
-        background: rgba(255, 255, 255, 0.9);
-        border-radius: 12px;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        overflow: hidden;
-    }
-
-    .header {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        color: white;
-        padding: 40px;
-        text-align: center;
-    }
-
-    .header h1 {
-        font-size: 2.5rem;
-        font-weight: 300;
-        margin-bottom: 10px;
-        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    }
-
-    .header p {
-        font-size: 1.1rem;
-        opacity: 0.9;
-        margin-top: 10px;
-    }
-
-    .content {
-        padding: 40px;
-    }
-
-    .section {
-        margin-bottom: 40px;
-    }
-
-    .section h2 {
-        color: #495057;
-        font-size: 1.8rem;
-        margin-bottom: 20px;
-        border-bottom: 2px solid #e9ecef;
-        padding-bottom: 10px;
-        font-weight: 500;
-    }
-
-    .section p {
-        color: #6c757d;
-        font-size: 1.1rem;
-        line-height: 1.8;
-        margin-bottom: 15px;
-    }
-
-    .section ul {
-        color: #6c757d;
-        font-size: 1.1rem;
-        line-height: 1.8;
-        margin-left: 20px;
-        margin-bottom: 15px;
-    }
-
-    .section li {
-        margin-bottom: 10px;
-    }
-
-    .tech-list {
-        margin-top: 20px;
-    }
-
-    .tech-item {
-        margin-bottom: 20px;
-        padding: 15px 0;
-        border-bottom: 1px solid #f1f3f4;
-    }
-
-    .tech-item:last-child {
-        border-bottom: none;
-    }
-
-    .tech-label {
-        font-weight: 600;
-        color: #495057;
-        font-size: 1rem;
-        display: block;
-        margin-bottom: 8px;
-    }
-
-    .tech-value {
-        color: #6c757d;
-        font-size: 1rem;
-        line-height: 1.6;
-    }
-
-    .back-link-container {
-        text-align: center;
-        margin-top: 30px;
-    }
-
-    .back-link {
-        display: inline-block;
-        padding: 12px 24px;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        color: white;
-        text-decoration: none;
-        border-radius: 6px;
-        transition: all 0.3s ease;
-        font-weight: 500;
-    }
-
-    .back-link:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
-    }
-
-    @media (max-width: 768px) {
         body {
-            padding: 20px 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
         }
-        
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: rgba(15, 15, 26, 0.9);
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            overflow: hidden;
+        }
+
         .header {
-            padding: 30px 20px;
+            background: linear-gradient(135deg, #4b79cf 0%, #6e48aa 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
         }
-        
+
         .header h1 {
-            font-size: 2rem;
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
         }
-        
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-top: 10px;
+        }
+
         .content {
-            padding: 30px 20px;
+            padding: 40px;
+            color: #d1d5db;
         }
-        
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #a5b4fc;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #2d3748;
+            padding-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .section p {
+            color: #d1d5db;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .section ul {
+            color: #d1d5db;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .section li {
+            margin-bottom: 10px;
+        }
+
+        .tech-list {
+            margin-top: 20px;
+        }
+
+        .tech-item {
+            margin-bottom: 20px;
+            padding: 15px 0;
+            border-bottom: 1px solid #2d3748;
+        }
+
+        .tech-item:last-child {
+            border-bottom: none;
+        }
+
         .tech-label {
-            min-width: auto;
-            margin-bottom: 5px;
+            font-weight: 600;
+            color: #a5b4fc;
+            font-size: 1rem;
+            display: block;
+            margin-bottom: 8px;
         }
-    }
-</style>
+
+        .tech-value {
+            color: #d1d5db;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .back-link-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .back-link {
+            display: inline-block;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #4b79cf 0%, #6e48aa 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(75, 121, 207, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+            
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <a href="index.html?show=projects">← Back to Projects</a>
+    
     <div class="container">
         <div class="header">
             <h1>Art Vision Enhancer Chatbot</h1>
@@ -175,38 +171,55 @@
             </div>
 
             <div class="section">
-                <h2>Deliverables</h2>
-                <p>The Art Vision Enhancer Chatbot is designed to interact with students by understanding their descriptions of art concepts and prompting them to explore their ideas further. Leveraging advanced natural language processing (NLP) techniques, the chatbot interprets student responses and generates follow-up questions that simulate a creative brainstorming session. This adaptive questioning mechanism enhances the learning experience, encouraging students to think critically and expand on their initial ideas.</p>
+                <h2>Key Features</h2>
+                <ul>
+                    <li><b>Creative Dialogue System:</b> Engages students in meaningful conversations about their art concepts through adaptive questioning.</li>
+                    <li><b>Concept Exploration:</b> Encourages deeper thinking by prompting students to expand on their initial ideas and consider new perspectives.</li>
+                    <li><b>Natural Language Processing:</b> Interprets student responses with advanced NLP techniques for more human-like interactions.</li>
+                    <li><b>Adaptive Learning:</b> The chatbot's questioning mechanism evolves based on student responses to maintain engaging dialogue.</li>
+                    <li><b>Artistic Inspiration:</b> Provides thoughtful prompts and suggestions to stimulate creative thinking.</li>
+                </ul>
             </div>
 
             <div class="section">
                 <h2>Technologies Used</h2>
                 <div class="tech-list">
                     <div class="tech-item">
-                        <div class="tech-label">Programming Language</div>
-                        <div class="tech-value">Python</div>
+                        <div class="tech-label">Core Framework</div>
+                        <div class="tech-value">Django for backend implementation</div>
                     </div>
                     <div class="tech-item">
-                        <div class="tech-label">Framework</div>
-                        <div class="tech-value">Django</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-label">API</div>
-                        <div class="tech-value">ChatGPT-4 API for natural language understanding and dialogue generation</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-label">NLP Techniques</div>
-                        <div class="tech-value">Used for parsing and interpreting student responses</div>
+                        <div class="tech-label">Natural Language Processing</div>
+                        <div class="tech-value">ChatGPT-4 API for dialogue generation and understanding</div>
                     </div>
                     <div class="tech-item">
                         <div class="tech-label">Machine Learning</div>
-                        <div class="tech-value">Applied to develop the chatbot's adaptive questioning mechanism</div>
+                        <div class="tech-value">Custom algorithms for adaptive questioning and response analysis</div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-label">Frontend</div>
+                        <div class="tech-value">HTML5/CSS3 interface with responsive design</div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-label">Concept Inspiration</div>
+                        <div class="tech-value">Art education theories, creative cognition, and dialogue systems</div>
                     </div>
                 </div>
             </div>
 
+            <div class="section">
+                <h2>Project Impact</h2>
+                <p>This innovative chatbot demonstrates how AI can enhance creative education by:</p>
+                <ul>
+                    <li><b>Personalized Learning:</b> Adapts to each student's unique creative process and thinking style</li>
+                    <li><b>Accessibility:</b> Provides art education support outside traditional classroom settings</li>
+                    <li><b>Creative Stimulation:</b> Helps overcome creative blocks through intelligent questioning</li>
+                    <li><b>Research Potential:</b> Offers insights into how AI can support arts education and creative development</li>
+                </ul>
+            </div>
+
             <div class="back-link-container">
-    <a href="javascript:history.back()" class="back-link">Back to Projects</a>
+                <a href="javascript:history.back()" class="back-link">Back to Projects</a>
             </div>
         </div>
     </div>
